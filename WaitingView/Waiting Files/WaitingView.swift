@@ -31,7 +31,6 @@ class WaitingView: NSObject {
     
 }
 
-
 extension UIViewController {
 
     func pleaseWait() {
