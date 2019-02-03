@@ -10,23 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    // MARK: OBJECTS
     @IBAction func buttonWaitingAction(_ sender: UIButton) {self.actionWaiting()}
-    
     @IBAction func buttonAlertTextAction(_ sender: UIButton) {actionAlertText()}
     
-    @IBAction func buttonWatingStopAction(_ sender: UIButton) {self.clearAllNotice()}
+    // MARK: VARIABLES && CONSTANTS
+
     
-    
-    
+    // MARK: VIEW METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        WaitingViewVC.delegateWaitingView = self
     }
     
+    // MARK: OTHER METHODS
     private func actionWaiting() {
         print("action waiting")
+        
         self.pleaseWait()
+        
+        
+        
     }
     
     private func actionAlertText() {
@@ -35,3 +40,10 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: WaitingViewVCProtocol {
+    
+    func stopWaintigView() {
+        self.clearAllNotice()
+    }
+    
+}

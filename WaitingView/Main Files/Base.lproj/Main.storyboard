@@ -49,28 +49,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-4a-JlG">
-                                <rect key="frame" x="30" y="597" width="315" height="40"/>
-                                <color key="backgroundColor" red="0.96079081300000002" green="0.96077281240000001" blue="0.96078497169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="9Ra-uY-3Du"/>
-                                </constraints>
-                                <state key="normal" title="STOP Waiting">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonWatingStopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4a5-q0-yEI"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63281196360000003" green="0.76968187089999995" blue="0.21155995129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3ax-9R-EyW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2Be-jR-5fG"/>
                             <constraint firstItem="3ax-9R-EyW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="91B-LO-zWo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ax-9R-EyW" secondAttribute="trailing" constant="30" id="Mwa-7g-A1D"/>
-                            <constraint firstItem="kdQ-4a-JlG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="h9z-x0-nR6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kdQ-4a-JlG" secondAttribute="trailing" constant="30" id="j8E-wh-dbS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kdQ-4a-JlG" secondAttribute="bottom" constant="30" id="oO1-DE-ecD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
