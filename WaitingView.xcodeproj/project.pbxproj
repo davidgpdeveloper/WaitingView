@@ -15,6 +15,7 @@
 		9655B53B220479DB00072AC3 /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655B53A220479DA00072AC3 /* WaitingView.swift */; };
 		9655B53D22047A5300072AC3 /* WaitingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9655B53C22047A5300072AC3 /* WaitingView.xib */; };
 		9655B53F22047A6A00072AC3 /* WaitingViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655B53E22047A6A00072AC3 /* WaitingViewVC.swift */; };
+		968E348622075C1900AF9815 /* ReferenceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968E348522075C1900AF9815 /* ReferenceFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9655B53A220479DA00072AC3 /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
 		9655B53C22047A5300072AC3 /* WaitingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaitingView.xib; sourceTree = "<group>"; };
 		9655B53E22047A6A00072AC3 /* WaitingViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingViewVC.swift; sourceTree = "<group>"; };
+		968E348522075C1900AF9815 /* ReferenceFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				9655B524220475AA00072AC3 /* AppDelegate.swift */,
 				9655B52B220475AC00072AC3 /* Assets.xcassets */,
 				9655B52D220475AC00072AC3 /* LaunchScreen.storyboard */,
+				968E348522075C1900AF9815 /* ReferenceFile.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968E348622075C1900AF9815 /* ReferenceFile.swift in Sources */,
 				9655B527220475AA00072AC3 /* ViewController.swift in Sources */,
 				9655B53F22047A6A00072AC3 /* WaitingViewVC.swift in Sources */,
 				9655B525220475AA00072AC3 /* AppDelegate.swift in Sources */,

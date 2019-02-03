@@ -21,12 +21,12 @@ class WaitingView: NSObject {
     }
     
     static func wait() {
-        let customView = WaitingViewVC.instance.loadViewFromNib()
-        customView.frame = CGRect(x: 0, y: 0, width: rv.frame.width, height: rv.frame.height)
-        customView.center = rv.center
-        rv.addSubview(customView)
-        rv.bringSubviewToFront(customView)
-        mainViews.append(customView)
+        let waitingXibView = WaitingViewVC.instance.loadViewFromNib()
+        waitingXibView.frame = CGRect(x: 0, y: 0, width: rv.frame.width, height: rv.frame.height)
+        waitingXibView.center = rv.center
+        rv.addSubview(waitingXibView)
+        rv.bringSubviewToFront(waitingXibView)
+        mainViews.append(waitingXibView)
     }
     
 }
@@ -38,6 +38,8 @@ extension UIViewController {
         WaitingView.wait()
     }
     
-
-    
+    func clearAllNotice() {
+        self.view.isUserInteractionEnabled = true
+        WaitingView.clear()
+    }
 }
