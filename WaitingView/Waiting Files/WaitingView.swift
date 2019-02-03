@@ -22,7 +22,7 @@ class WaitingView: NSObject {
     
     static func wait() {
         let waitingXibView = WaitingViewVC.instance.loadViewFromNib()
-        waitingXibView.frame = CGRect(x: 0, y: 0, width: rv.frame.width, height: rv.frame.height)
+        waitingXibView.frame = CGRect(x: 0, y: 400, width: rv.frame.width, height: rv.frame.height-200)
         waitingXibView.center = rv.center
         rv.addSubview(waitingXibView)
         rv.bringSubviewToFront(waitingXibView)
@@ -34,7 +34,7 @@ class WaitingView: NSObject {
 extension UIViewController {
 
     func pleaseWait() {
-        self.view.isUserInteractionEnabled = false
+//        self.view.isUserInteractionEnabled = false
         WaitingView.wait()
     }
     

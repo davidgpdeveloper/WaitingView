@@ -15,19 +15,18 @@ class ViewController: UIViewController {
     
     @IBAction func buttonAlertTextAction(_ sender: UIButton) {actionAlertText()}
     
+    @IBAction func buttonWatingStopAction(_ sender: UIButton) {self.clearAllNotice()}
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-
-
+    
     private func actionWaiting() {
         print("action waiting")
-        
         self.pleaseWait()
-    
-        
     }
     
     private func actionAlertText() {
