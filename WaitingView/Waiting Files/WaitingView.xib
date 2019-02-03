@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcb-6C-Cdp">
+                    <rect key="frame" x="30" y="50" width="315" height="587"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="75c-RO-h9o">
+                            <rect key="frame" x="20" y="252" width="275" height="83"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7qA-Eb-Smc">
+                                    <rect key="frame" x="119" y="0.0" width="37" height="37"/>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhe-Xo-WfK">
+                                    <rect key="frame" x="70" y="47" width="135" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98029571770000001" green="0.16956627369999999" blue="0.21955630179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="75c-RO-h9o" firstAttribute="leading" secondItem="Jcb-6C-Cdp" secondAttribute="leading" constant="20" id="SKt-I2-zmu"/>
+                        <constraint firstAttribute="trailing" secondItem="75c-RO-h9o" secondAttribute="trailing" constant="20" id="Sc0-xs-f1j"/>
+                        <constraint firstItem="75c-RO-h9o" firstAttribute="centerX" secondItem="Jcb-6C-Cdp" secondAttribute="centerX" id="VAR-l8-kS5"/>
+                        <constraint firstItem="75c-RO-h9o" firstAttribute="centerY" secondItem="Jcb-6C-Cdp" secondAttribute="centerY" id="a29-bB-ePk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jcb-6C-Cdp" secondAttribute="trailing" constant="30" id="Ino-yq-ygo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Jcb-6C-Cdp" secondAttribute="bottom" constant="30" id="Nid-a5-bBA"/>
+                <constraint firstItem="Jcb-6C-Cdp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="O4Z-rx-zSo"/>
+                <constraint firstItem="Jcb-6C-Cdp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="Zoj-oV-b4a"/>
+                <constraint firstItem="Jcb-6C-Cdp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yHF-j8-v6p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
